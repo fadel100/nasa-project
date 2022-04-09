@@ -11,7 +11,7 @@
     "client": "npm run start --prefix client",
     "deploy": "npm run build --prefix client && npm run start --prefix server",
     "watch": "concurrently \"npm run server\"  \"npm run client\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test --prefix server"
   },
   "keywords": [],
   "author": "",
