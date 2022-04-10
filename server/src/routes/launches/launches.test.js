@@ -2,12 +2,14 @@ require("dotenv").config();
 
 const app = require("../../app");
 const { connectMongo, disconnectMongo } = require("../../services/mongo");
+const { loadPlanets } = require("../../models/planets.model");
 
 const request = require("supertest");
 
 describe("test nasa api", () => {
   beforeAll(async () => {
     await connectMongo();
+    await loadPlanets();
   });
 
   afterAll(async () => {
