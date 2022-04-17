@@ -12,7 +12,7 @@
     "deploy": "npm run build --prefix client && npm run start --prefix server",
     "watch": "concurrently \"npm run server\"  \"npm run client\"",
     "test": "npm run test --prefix server",
-    "testing": "npm asd"
+    "testing": "npms asd"
   },
   "keywords": [],
   "author": "",
