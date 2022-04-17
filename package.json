@@ -11,7 +11,8 @@
     "client": "npm run start --prefix client",
     "deploy": "npm run build --prefix client && npm run start --prefix server",
     "watch": "concurrently \"npm run server\"  \"npm run client\"",
-    "test": "npm run test --prefix server"
+    "test": "npm run test --prefix server",
+    "testing": "npm asd"
   },
   "keywords": [],
   "author": "",
