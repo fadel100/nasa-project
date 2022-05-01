@@ -36,6 +36,7 @@ async function httpSubmitLaunch(launch) {
 async function httpAbortLaunch(id) {
   // TODO: Once API is ready.
   // Delete launch with given ID.
+  // test workflow with pull request
   try {
     return await fetch(`v1/launches/${id}`, {
       method: "delete",
